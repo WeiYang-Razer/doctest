@@ -1,0 +1,22 @@
+{
+  "name": "doctest",
+  "version": "2.5.0.0",
+  "schemaVersion": 2,
+  "kind": "HeaderOnlyLib",
+  "description": "TODO: one-line description of doctest",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DDOCTEST_WITH_TESTS=OFF",
+      "-DDOCTEST_WITH_MAIN_IN_STATIC_LIB=OFF"
+    ],
+    "installDir": "install"
+  }
+}
